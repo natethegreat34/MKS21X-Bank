@@ -39,3 +39,15 @@ public String toString(){
    }
    return false;
  }
+
+ private boolean authenticate(String password)
+   if (password.equals(pwd)){
+     return true;}
+     else{return false;}
+     public boolean transferTo(BankAccount other, double amount, String password){
+       if (authenticate && amount > 0){
+         other = other + amount;
+         balance = balance - amount;
+       }
+     }
+}
